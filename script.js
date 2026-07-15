@@ -19,7 +19,7 @@ class imageInfo {
 }   
 
 function imageUpdate() {
-  $("#img").css("background-image", "url(" + image.getSrc() + ")");   
+  $("#image").css("background-image", "url(" + image.getSrc() + ")");   
 } 
 
 const ElmList = [$("#youtube"), $("#bsky"), $("#github"), $("#contact")]; 
