@@ -53,7 +53,7 @@ function Leave() {
 } 
 
 function fade() { 
-  var temp_numb; 
+  var temp_numb = false; 
   if(entered) {    
     if(!temp_numb) { 
       temp_numb = 0.1;  
@@ -67,7 +67,8 @@ function fade() {
   } 
   if (temp_numb == 0 || temp_numb == 1) {  
     clearInterval(ins);  
-    image.updateIndex(index); 
+    image.updateIndex(index);  
+    temp_numb = false; 
     imageUpdate();
   } 
     
