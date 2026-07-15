@@ -30,7 +30,7 @@ function setUp() {
   } 
 }  
 var inverval_wait = 50; 
-var entered = false; 
+var entered = false;  
 function Enter() {  
   entered = true;  
   index = 0; 
@@ -45,7 +45,7 @@ function Enter() {
     }
   } 
 } 
-
+var fadeOutInterval;
 function Leave() {   
    fadeOutInterval = setInterval(fadeOut, inverval_wait);
  
