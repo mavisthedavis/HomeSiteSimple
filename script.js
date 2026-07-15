@@ -67,7 +67,7 @@ function fadeIn() {
   }
 
 } 
-function fadeOut(); 
+function fadeOut() {
   if(!temp_numb) { 
     temp_numb = 0.9;  
   }
