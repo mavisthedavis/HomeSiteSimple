@@ -39,7 +39,8 @@ function Enter() {
     //console.log(ElmList[i]); 
     if (this.id == ElmList[i].attr('id')) {    
       ins = setInterval(fade, inverval_wait);   
-      index = i; 
+      index.updateIndex(i); 
+      imageUpdate();
        
     }
   } 
@@ -51,27 +52,26 @@ function Leave() {
   image.updateIndex(4); 
   imageUpdate();   
 } 
+var temp_numb = false;
+function fadeIn() {   
+  console.log(temp_numb);   
+  if(!(temp_numb)) { 
+    temp_numb = 0.1;  
+  }
+  $("image").css("opacity", (temp_numb + 0.1));  
+  if (temp_numb > 1) {  
+    clearInterval(ins);   
+    
+    
+    
+  }
 
-function fade() { 
-  var temp_numb = false;  
-  console.log(temp_numb); 
-  if(entered) {    
-    if(!temp_numb) { 
-      temp_numb = 0.1;  
-    }
-    $("image").css("opacity", (temp_numb + 0.1));  
-  } else {  
-    if(!temp_numb) { 
-      temp_numb = 0.9;  
-    }
-    $("image").css("opacity", (temp_numb - 0.1));   
-  } 
-  if (temp_numb == 0 || temp_numb == 1) {  
-    clearInterval(ins);  
-    image.updateIndex(index);  
-    temp_numb = false; 
-    imageUpdate();
-  } 
+} 
+function fadeOut(); 
+  if(!temp_numb) { 
+    temp_numb = 0.9;  
+  }
+  $("image").css("opacity", (temp_numb - 0.1));   
     
 }
 window.onload = function() {  
