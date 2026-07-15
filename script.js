@@ -56,12 +56,12 @@ function fade() {
   var temp_numb; 
   if(entered) {    
     if(!temp_numb) { 
-      temp_numb = 0;  
+      temp_numb = 0.1;  
     }
     $("image").css("opacity", (temp_numb + 0.1));  
   } else {  
     if(!temp_numb) { 
-      temp_numb = 1;  
+      temp_numb = 0.9;  
     }
     $("image").css("opacity", (temp_numb - 0.1));   
   } 
