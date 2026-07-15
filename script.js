@@ -47,14 +47,11 @@ function Enter() {
 } 
 
 function Leave() {   
-  
-  entered = false;  
-  image.updateIndex(4); 
-  imageUpdate();   
+   ins = setInterval(fadeOut, inverval_wait);
+ 
 } 
 var temp_numb = false;
 function fadeIn() {   
-  console.log(temp_numb);   
   if(temp_numb == false) { 
     temp_numb = 0.1;  
   } 
@@ -70,10 +67,15 @@ function fadeIn() {
 
 } 
 function fadeOut() {
-  if(!temp_numb) { 
+  if(temp_numb == false) { 
     temp_numb = 0.9;  
+  } 
+  temp_numb -= 0.05; 
+  $("#image").css("opacity", temp_numb);  
+  if (temp_numb < 0) {   
+    temp_numb = false;
+    clearInterval(ins);   
   }
-  $("#image").css("opacity", (temp_numb - 0.1));   
     
 }
 window.onload = function() {  
