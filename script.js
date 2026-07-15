@@ -32,9 +32,9 @@ function setUp() {
 
 function Enter() { 
   for (let i = 0; i < ElmList.length; i++) {  
-    console.log(this); 
-    console.log(ElmList[i]); 
-    if (this == ElmList[i]) {  
+    //console.log($(this)); 
+    //console.log(ElmList[i]); 
+    if (this.id == ElmList[i].attr('id')) {  
       image.updateIndex(i); 
       imageUpdate(); 
     }
