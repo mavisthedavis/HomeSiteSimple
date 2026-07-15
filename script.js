@@ -9,11 +9,11 @@ class imageInfo {
     this.#index = index; 
   }  
   getSrc() { 
-    return #imageList[#index]; 
+    return this.#imageList[this.#index]; 
   }
   printValues() { 
-    console.log(#imageList); 
-    console.log(#index); 
+    console.log(this.#imageList); 
+    console.log(this.#index); 
   } 
   
 }  
