@@ -10,5 +10,8 @@ body {
   flex-direction: column;      
   justify-content: center; 
   align-items: center;
-  gap: 15px;   
+  gap: 5vw;   
 }
+a { 
+  font-size: 5vw;  
+} 
