@@ -30,7 +30,7 @@ function setUp() {
   } 
 } 
 
-function Enter(this) { 
+function Enter() { 
   for (let i = 0; i < ElmList.length; i++) { 
     if ($(this) == ElmList[i]) { 
       image.updateIndex(i); 
