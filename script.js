@@ -38,7 +38,7 @@ function Enter() {
     //console.log($(this)); 
     //console.log(ElmList[i]); 
     if (this.id == ElmList[i].attr('id')) {    
-      ins = setInterval(fade, inverval_wait);   
+      ins = setInterval(fadeIn, inverval_wait);   
       index.updateIndex(i); 
       imageUpdate();
        
