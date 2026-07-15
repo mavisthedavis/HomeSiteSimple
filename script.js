@@ -15,7 +15,7 @@ class imageInfo {
   } 
   
 }  
-function imageUpdate(); 
+function imageUpdate() {
   ("img").attr("src", image.getSrc());   
 }
 window.onload = function() {  
