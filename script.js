@@ -38,7 +38,7 @@ function Enter() {
     //console.log($(this)); 
     //console.log(ElmList[i]); 
     if (this.id == ElmList[i].attr('id')) {    
-      ins = setInterval(fadeIn, inverval_wait);   
+      fadeInInterval = setInterval(fadeIn, inverval_wait);   
       image.updateIndex(i); 
       imageUpdate();
        
@@ -47,19 +47,22 @@ function Enter() {
 } 
 
 function Leave() {   
-   ins = setInterval(fadeOut, inverval_wait);
+   fadeOutInterval = setInterval(fadeOut, inverval_wait);
  
-} 
+}  
+var numb_change = 0.7; 
 var temp_numb = false;
 function fadeIn() {   
-  if(temp_numb == false) { 
+  if(temp_numb == false && fadeOutInterval == null) { 
     temp_numb = 0.1;  
-  } 
-  temp_numb += 0.05; 
+  } else { 
+    clearInterval(fadeOutInterval); 
+  }
+  temp_numb += numb_change; 
   $("#image").css("opacity", temp_numb);  
   if (temp_numb > 1) {   
     temp_numb = false;
-    clearInterval(ins);   
+    clearInterval(fadeInInterval);   
     
     
     
@@ -67,14 +70,16 @@ function fadeIn() {
 
 } 
 function fadeOut() {
-  if(temp_numb == false) { 
+  if(temp_numb == false && fadeInInterval == null) { 
     temp_numb = 0.9;  
-  } 
-  temp_numb -= 0.05; 
+  } else { 
+    clearInterval(fadeInInterval);   
+  }
+  temp_numb -= numb_change; 
   $("#image").css("opacity", temp_numb);  
   if (temp_numb < 0) {   
     temp_numb = false;
-    clearInterval(ins);   
+    clearInterval(fadeOutInterval);   
   }
     
 }
