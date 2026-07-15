@@ -58,7 +58,7 @@ function fadeIn() {
   if(temp_numb == false) { 
     temp_numb = 0.1;  
   } 
-  temp_numb += 0.1; 
+  temp_numb += 0.01; 
   $("#image").css("opacity", temp_numb);  
   if (temp_numb > 1) {  
     clearInterval(ins);   
