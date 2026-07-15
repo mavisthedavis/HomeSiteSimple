@@ -1,17 +1,19 @@
-class imageInfo { 
+class imageInfo {  
+  #imageList;  
+  #index;
   constructor(imageList, index) { 
-    this.imageList = imageList; 
-    this.index = index; 
+    this.#imageList = imageList; 
+    this.#index = index; 
   }  
   updateIndex(index) { 
-    this.index = index; 
+    this.#index = index; 
   }  
   getSrc() { 
-    return imageList[index]; 
+    return #imageList[#index]; 
   }
   printValues() { 
-    console.log(imageList); 
-    console.log(index); 
+    console.log(#imageList); 
+    console.log(#index); 
   } 
   
 }  
