@@ -47,7 +47,7 @@ function Leave() {
 } 
 
 window.onload = function() {  
-  image = new imageInfo(["images/you.png", "images/blue.png", "images/git.png", "images/gmail.png", ""], 4); 
+  image = new imageInfo(["images/you.png", "images/blue.png", "images/git.png", "images/gmail.png", "black.png"], 4); 
   imageUpdate();  
   setUp(); 
 } 
