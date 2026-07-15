@@ -37,7 +37,7 @@ function Enter() {
     //console.log($(this)); 
     //console.log(ElmList[i]); 
     if (this.id == ElmList[i].attr('id')) {    
-      var ins = setInterval(fade, 10);   
+      ins = setInterval(fade, 10);   
       index = i; 
        
     }
