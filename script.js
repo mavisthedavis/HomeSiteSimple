@@ -53,7 +53,8 @@ function Leave() {
 } 
 
 function fade() { 
-  var temp_numb = false; 
+  var temp_numb = false;  
+  console.log(temp_numb); 
   if(entered) {    
     if(!temp_numb) { 
       temp_numb = 0.1;  
