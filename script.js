@@ -39,7 +39,7 @@ function Enter() {
     //console.log(ElmList[i]); 
     if (this.id == ElmList[i].attr('id')) {    
       ins = setInterval(fadeIn, inverval_wait);   
-      index.updateIndex(i); 
+      image.updateIndex(i); 
       imageUpdate();
        
     }
