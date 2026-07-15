@@ -25,8 +25,8 @@ function imageUpdate() {
 const ElmList = [$("#youtube"), $("#bsky"), $("#github"), $("#contact")]; 
 function setUp() { 
   for (let i = 0; i < ElmList.length; i++) { 
-    ElmList.on("mouseenter", Enter);  
-    ElmList.on("mouseenter", Leave);  
+    ElmList[i].on("mouseenter", Enter);  
+    ElmList[i].on("mouseleave", Leave);  
   } 
 } 
 
