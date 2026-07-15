@@ -37,7 +37,7 @@ function Enter() {
     //console.log($(this)); 
     //console.log(ElmList[i]); 
     if (this.id == ElmList[i].attr('id')) {    
-      var in = setInterval(fade, 10);   
+      var ins = setInterval(fade, 10);   
       index = i; 
        
     }
@@ -65,7 +65,7 @@ function fade() {
     $("image").css("opacity", (temp_numb - 0.1));   
   } 
   if (temp_numb == 0 || temp_numb == 1) {  
-    clearInterval(in);  
+    clearInterval(ins);  
     image.updateIndex(index); 
     imageUpdate();
   } 
