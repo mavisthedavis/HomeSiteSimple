@@ -32,8 +32,8 @@ function setUp() {
 
 function Enter() { 
   for (let i = 0; i < ElmList.length; i++) {  
-    console.log($(this) == ElmList[i]); 
-    if ($(this) == ElmList[i]) {  
+    console.log(this == ElmList[i]); 
+    if (this == ElmList[i]) {  
       image.updateIndex(i); 
       imageUpdate(); 
     }
