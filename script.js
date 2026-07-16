@@ -50,7 +50,7 @@ function Leave() {
    fadeOutInterval = setInterval(fadeOut, inverval_wait);
  
 }  
-var numb_change = 0.7; 
+var numb_change = 0.09; 
 var temp_numb = false;
 function fadeIn() {   
   if(temp_numb == false && fadeOutInterval == null) { 
