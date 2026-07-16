@@ -56,14 +56,15 @@ function fadeIn() {
   if(temp_numb == false && fadeOutInterval == null) { 
     temp_numb = 0.1;  
   } else { 
-    clearInterval(fadeOutInterval); 
+    clearInterval(fadeOutInterval);  
+    fadeOutInterval = null; 
   }
   temp_numb += numb_change; 
   $("#image").css("opacity", temp_numb);  
   if (temp_numb > 1) {   
     temp_numb = false;
     clearInterval(fadeInInterval);   
-    
+    fadeInInterval = null; 
     
     
   }
@@ -73,13 +74,15 @@ function fadeOut() {
   if(temp_numb == false && fadeInInterval == null) { 
     temp_numb = 0.9;  
   } else { 
-    clearInterval(fadeInInterval);   
+    clearInterval(fadeInInterval);    
+    fadeInInterval = null; 
   }
   temp_numb -= numb_change; 
   $("#image").css("opacity", temp_numb);  
   if (temp_numb < 0) {   
     temp_numb = false;
-    clearInterval(fadeOutInterval);   
+    clearInterval(fadeOutInterval);    
+    fadeOutInterval = null; 
   }
     
 }
