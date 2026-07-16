@@ -29,7 +29,7 @@ function setUp() {
     ElmList[i].on("mouseleave", Leave);  
   } 
 }  
-var inverval_wait = 50; 
+var inverval_wait = 25; 
 var entered = false;   
 var FadeInAndOut = null; 
 function Enter() {  
