@@ -26,5 +26,6 @@ a {
   color: #55ff20;  
   background-color: black; 
   font-size: 5vw;   
-  border: 1vw solid black;
+  border: 1vw solid black; 
+  border-radius: 12px;
 } 
