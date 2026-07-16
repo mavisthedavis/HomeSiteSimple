@@ -8,7 +8,8 @@
   position: absolute; 
   top: 0px; 
   left: 0px; 
-  z-index: -1; 
+  z-index: -1;  
+  filter: blur(10px);
 }  
 #link_container { 
   display: flex;          
@@ -22,6 +23,6 @@ body {
 }
 a {  
   font-family: "Jockey";  
-  color: blue; 
+  color: #55ff20; 
   font-size: 5vw;  
 } 
