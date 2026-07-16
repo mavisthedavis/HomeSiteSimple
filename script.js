@@ -31,7 +31,7 @@ function setUp() {
 }  
 var inverval_wait = 50; 
 var entered = false;   
-var FadeInAndOut == null; 
+var FadeInAndOut = null; 
 function Enter() {  
   entered = true;  
   index = 0; 
