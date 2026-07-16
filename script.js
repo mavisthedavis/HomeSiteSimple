@@ -77,40 +77,7 @@ function fade() {
     FadeInAndOut = null; 
   }
 }
-function fadeIn() {   
-  if(temp_numb == false && fadeOutInterval == null) { 
-    temp_numb = 0.1;  
-  } else { 
-    clearInterval(fadeOutInterval);  
-    fadeOutInterval = null; 
-  }
-  temp_numb += numb_change; 
-  $("#image").css("opacity", temp_numb);  
-  if (temp_numb > 1) {   
-    temp_numb = false;
-    clearInterval(fadeInInterval);   
-    fadeInInterval = null; 
-    
-    
-  }
 
-} 
-function fadeOut() {
-  if(temp_numb == false && fadeInInterval == null) { 
-    temp_numb = 0.9;  
-  } else { 
-    //clearInterval(fadeInInterval);    
-    //fadeInInterval = null; 
-  }
-  temp_numb -= numb_change; 
-  $("#image").css("opacity", temp_numb);  
-  if (temp_numb < 0) {   
-    temp_numb = false;
-    clearInterval(fadeOutInterval);    
-    fadeOutInterval = null; 
-  }
-    
-}
 window.onload = function() {  
   image = new imageInfo(["images/you.png", "images/blue.png", "images/git.png", "images/gmail.png", "images/black.png"], 4); 
   imageUpdate();  
