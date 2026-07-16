@@ -74,8 +74,8 @@ function fadeOut() {
   if(temp_numb == false && fadeInInterval == null) { 
     temp_numb = 0.9;  
   } else { 
-    clearInterval(fadeInInterval);    
-    fadeInInterval = null; 
+    //clearInterval(fadeInInterval);    
+    //fadeInInterval = null; 
   }
   temp_numb -= numb_change; 
   $("#image").css("opacity", temp_numb);  
