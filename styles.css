@@ -23,6 +23,7 @@ body {
 }
 a {  
   font-family: "Jockey";  
-  color: #55ff20; 
+  color: #55ff20;  
+  background-color: black; 
   font-size: 5vw;  
 } 
